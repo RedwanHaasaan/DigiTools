@@ -123,7 +123,7 @@ const Navbar = () => {
             py-3 lg:py-4 xl:py-5 px-4 lg:px-5 xl:px-6 
             rounded-full
             bg-linear-to-r from-[#4F39F6] to-[#9514FA]
-            hover:bg-none hover:text-[#4F39F6] hover:border hover:border-[#4F39F6]
+            hover:bg-none hover:bg-white hover:text-[#4F39F6] hover:border hover:border-[#4F39F6]
             transition-all duration-300 hidden md:flex"
           >
             Get Started
