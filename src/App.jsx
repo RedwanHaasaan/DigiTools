@@ -1,5 +1,6 @@
 import Navbar from "./components/layout/Navbar";
 import Hero from "./sections/Hero";
+import StatSection from "./sections/StatSection";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       </header>
       <main>
         <Hero />
+        <StatSection/>
       </main>
     </>
   );
