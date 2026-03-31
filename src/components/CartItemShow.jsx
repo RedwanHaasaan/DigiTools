@@ -28,7 +28,7 @@ const iconMap = {
   Search,
   Bell,
 };
-const CartItemShow = ({ cart }) => {
+const CartItemShow = ({ cart, handleRemoveItem }) => {
   const totalPrice = cart.reduce((total, item) => total + item.price, 0);
   return (
     <>
@@ -53,7 +53,7 @@ const CartItemShow = ({ cart }) => {
                 </div>
               </div>
 
-              <div>
+              <div onClick={()=>handleRemoveItem(item.id)}>
                 <Trash2 className="hover:text-red-400 cursor-pointer" />
               </div>
             </div>

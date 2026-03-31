@@ -39,7 +39,7 @@ const ProductSection = () => {
       {active === "products" ? (
         <ProductShow products={products} AddToCart={AddToCart} />
       ) : (
-        <Cart cart={cart} setActive={setActive}/>
+        <Cart cart={cart} setActive={setActive} setCart={setCart} />
       )}
     </div>
   );
