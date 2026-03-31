@@ -28,8 +28,9 @@ const iconMap = {
   Search,
   Bell,
 };
-const CartItemShow = ({ cart, handleRemoveItem }) => {
+const CartItemShow = ({ cart, handleRemoveItem, handleCheckout}) => {
   const totalPrice = cart.reduce((total, item) => total + item.price, 0);
+
   return (
     <>
       <h1 className="xl:text-2xl font-bold">Your Cart</h1>
@@ -64,7 +65,7 @@ const CartItemShow = ({ cart, handleRemoveItem }) => {
         <span className="text-gray-500 font-normal text-base">Total:</span>
         <span className="text-gray-800 font-bold text-2xl">${totalPrice}</span>
       </div>
-      <button className="btn btn-primary bg-gradient rounded-full text-base font-bold">
+      <button onClick={()=>handleCheckout()} className="btn btn-primary bg-gradient rounded-full text-base font-bold">
         Proceed To Checkout
       </button>
     </>
