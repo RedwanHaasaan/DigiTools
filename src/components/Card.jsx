@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   FileText,
   Layout,
@@ -34,25 +35,30 @@ const tagStyles = {
   "best seller": "badge-primary",
 };
 
-const Card = ({ product,AddToCart}) => {
+const Card = ({ product, AddToCart }) => {
+  const [added, setAdded] = useState(false);
+  const handleClick = () => {
+    setAdded(true);
+    AddToCart(product);
+    setTimeout(() => setAdded(false), 3000);
+  };
   const Icon = iconMap[product.icon] || FileText;
 
   return (
     <div className="card max-w-96 bg-base-100 shadow-sm border border-gray-100 rounded-2xl cursor-pointer hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-      
       <div className="card-body">
         <div className="flex justify-end">
-          <span className={`badge badge-sm xl:badge-lg text-white ${tagStyles[product.tag]}`}>
+          <span
+            className={`badge badge-sm xl:badge-lg text-white ${tagStyles[product.tag]}`}
+          >
             {product.tag}
           </span>
         </div>
         <div>
-             <Icon className="w-12 h-12 border border-gray-200 p-2 rounded-full text-primary" />
+          <Icon className="w-12 h-12 border border-gray-200 p-2 rounded-full text-primary" />
         </div>
         <div className="flex flex-col gap-4">
-          <h2 className="text-2xl xl:text-3xl font-bold">
-            {product.name}
-          </h2>
+          <h2 className="text-2xl xl:text-3xl font-bold">{product.name}</h2>
 
           <p className="text-sm xl:text-base text-gray-500">
             {product.description}
@@ -65,8 +71,8 @@ const Card = ({ product,AddToCart}) => {
               {product.period === "monthly"
                 ? "mo"
                 : product.period === "yearly"
-                ? "yr"
-                : "one-time"}
+                  ? "yr"
+                  : "one-time"}
             </span>
           </p>
         </div>
@@ -92,11 +98,15 @@ const Card = ({ product,AddToCart}) => {
           ))}
         </ul>
         <div className="mt-6">
-          <button onClick={()=>AddToCart(product)} className="btn btn-primary bg-gradient btn-block rounded-full hover:scale-105 transition-all">
-            Buy Now
+          <button
+            onClick={handleClick}
+            className={`btn btn-block rounded-full transition-all ${
+              added ? "btn-success text-white" : "btn-primary bg-gradient"
+            }`}
+          >
+            {added ? "Added to Cart" : "Buy Now"}
           </button>
         </div>
-
       </div>
     </div>
   );
