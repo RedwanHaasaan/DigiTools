@@ -2,6 +2,7 @@ import { useState } from "react";
 import ToggleButtons from "../components/ToggleButtons";
 import ProductShow from "../components/layout/ProductShow";
 import Cart from "../components/layout/Cart";
+import { toast } from "react-toastify";
 const ProductSection = ({cart,setCart,active,setActive}) => {
   const [products, setProducts] = useState([]);
   const [loaded, setLoaded] = useState(false);
@@ -17,6 +18,7 @@ const ProductSection = ({cart,setCart,active,setActive}) => {
   const cartItem = cart.length;
     const AddToCart = (product) => {
     setCart((prev) => [...prev, product]);
+    toast.success("Item added to cart")
     };
   return (
     <div id="products" className="flex flex-col max-w-7xl mx-auto py-10 xl:py-32 px-4 gap-5 lg:gap-10">

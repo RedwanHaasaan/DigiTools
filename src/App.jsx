@@ -1,3 +1,4 @@
+import { ToastContainer } from "react-toastify";
 import Navbar from "./components/layout/Navbar";
 import Hero from "./sections/Hero";
 import ProductSection from "./sections/ProductSection";
@@ -16,6 +17,14 @@ function App() {
         <StatSection/>
         <ProductSection cart={cart} setCart={setCart} active={active} setActive={setActive} />
       </main>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={true}
+        closeOnClick
+        pauseOnHover
+      />
     </>
   );
 }

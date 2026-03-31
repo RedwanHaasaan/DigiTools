@@ -1,12 +1,14 @@
+import { toast } from "react-toastify";
 import CartItemShow from "../CartItemShow";
 import NoCartItem from "../NoCartItem";
 const Cart = ({cart,setActive,setCart}) => {
     const handleRemoveItem = (id) => {
         const updatedCart = cart.filter(item => item.id !== id);
         setCart(updatedCart);
+        toast.info("Item removed from cart")
     }
     const handleCheckout = () => {    
-    alert(`Proceeding to checkout.`);
+    toast.success("Checkout successful!")
     setCart([]);
   }
     return (
