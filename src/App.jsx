@@ -4,6 +4,7 @@ import Hero from "./sections/Hero";
 import ProductSection from "./sections/ProductSection";
 import StatSection from "./sections/StatSection";
 import { useState } from "react";
+import GetStarted from "./sections/GetStarted";
 function App() {
    const [cart, setCart] = useState([]);
    const [active, setActive] = useState("products");
@@ -16,6 +17,7 @@ function App() {
         <Hero />
         <StatSection/>
         <ProductSection cart={cart} setCart={setCart} active={active} setActive={setActive} />
+        <GetStarted/>
       </main>
       <ToastContainer
         position="top-right"
