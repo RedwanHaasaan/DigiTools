@@ -1,7 +1,7 @@
 const ToggleButtons = ({active,setActive,cartItem}) => {
 
   return (
-    <div className="max-w-44 xl:max-w-56 mx-auto flex gap-2 border rounded-full border-gray-100">
+    <div className="max-w-44 xl:max-w-64 mx-auto flex gap-2 border rounded-full border-gray-100">
       
       <button
         onClick={() => setActive("products")}
