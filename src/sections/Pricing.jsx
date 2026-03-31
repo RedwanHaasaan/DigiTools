@@ -11,7 +11,7 @@ const Pricing = () => {
             Choose the plan that fits your needs. Upgrade or downgrade anytime.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 container mx-auto justify-items-stretch mt-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 container mx-auto place-items-center mt-4">
           <PricingCard
             title="Starter"
             subtitle="Perfect for getting started"

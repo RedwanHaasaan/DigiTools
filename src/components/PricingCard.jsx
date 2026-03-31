@@ -9,7 +9,7 @@ const PricingCard = ({
 }) => {
   return (
     <div
-      className={`relative rounded-2xl max-w-xs md:max-w-sm lg:max-w-lg p-8 shadow-md transition-all duration-300
+      className={`relative rounded-2xl w-full mx-auto max-w-xs md:max-w-sm lg:max-w-lg p-8 shadow-md transition-all duration-300
       ${
         highlighted
           ? "bg-gradient text-white scale-105"
