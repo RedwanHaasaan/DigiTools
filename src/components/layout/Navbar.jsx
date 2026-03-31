@@ -13,7 +13,7 @@ const Navbar = () => {
     "text-sm lg:text-base xl:text-lg font-semibold text-gray-700 hover:text-primary transition-colors duration-200 relative after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full";
 
   return (
-    <div className="navbar bg-base-100 shadow-sm px-4 lg:px-8 xl:px-16 2xl:px-10 min-h-16 lg:min-h-18 xl:min-h-20 sticky top-0 z-50 backdrop-blur-md">
+    <div className="navbar bg-base-100 shadow-sm px-4 lg:px-8 xl:px-16 2xl:px-10 min-h-16 lg:min-h-18 xl:min-h-20 backdrop-blur-md">
       
       {/* Container */}
       <div className="container mx-auto flex items-center justify-between">

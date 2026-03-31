@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "AI Resume Builder",
+    "description": "Generate job-ready resumes instantly with AI assistance.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ ATS templates", "AI content suggestions", "Instant PDF export"],
+    "icon": "FileText"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Website Kit",
+    "description": "Download ready-made portfolio templates for developers and designers.",
+    "price": 39,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["React templates", "Fully responsive", "Easy customization"],
+    "icon": "Layout"
+  },
+  {
+    "id": 3,
+    "name": "Interview Prep AI",
+    "description": "Practice technical and HR interviews with AI simulations.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Mock interviews", "AI feedback", "Question bank"],
+    "icon": "Mic"
+  },
+  {
+    "id": 4,
+    "name": "Job Application Tracker",
+    "description": "A digital dashboard to manage and track your job applications.",
+    "price": 5,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Track applications", "Status updates", "Analytics insights"],
+    "icon": "ClipboardList"
+  },
+  {
+    "id": 5,
+    "name": "AI Cover Letter Generator",
+    "description": "Create personalized cover letters in seconds.",
+    "price": 7,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["AI writing assistant", "Multiple formats", "Download & edit"],
+    "icon": "Mail"
+  },
+  {
+    "id": 6,
+    "name": "Skill Certification Tests",
+    "description": "Online assessments to validate your professional skills.",
+    "price": 19,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Online exams", "Instant results", "Shareable certificates"],
+    "icon": "Award"
+  },
+  {
+    "id": 7,
+    "name": "Freelancer Starter Bundle",
+    "description": "Download digital resources to kickstart your freelance career.",
+    "price": 59,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Proposal templates", "Invoice generator", "Client tracker sheets"],
+    "icon": "Briefcase"
+  },
+  {
+    "id": 8,
+    "name": "LinkedIn Profile Optimizer",
+    "description": "AI-powered tool to improve your LinkedIn presence.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Profile scoring", "Keyword optimization", "Growth insights"],
+    "icon": "TrendingUp"
+  },
+  {
+    "id": 9,
+    "name": "Career Roadmap Planner",
+    "description": "Interactive digital planner to map your career growth.",
+    "price": 25,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Goal tracking", "Milestones", "AI recommendations"],
+    "icon": "Map"
+  },
+  {
+    "id": 10,
+    "name": "Premium Template Pack",
+    "description": "Download a bundle of premium digital templates.",
+    "price": 79,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["500+ templates", "Lifetime access", "Regular updates"],
+    "icon": "Package"
+  },
+  {
+    "id": 11,
+    "name": "AI Resume Analyzer",
+    "description": "Upload your resume and get instant improvement suggestions.",
+    "price": 10,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["ATS score", "Keyword match", "Detailed feedback"],
+    "icon": "Search"
+  },
+  {
+    "id": 12,
+    "name": "Smart Job Alert System",
+    "description": "Get personalized job alerts delivered digitally.",
+    "price": 6,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Custom filters", "Daily alerts", "Email notifications"],
+    "icon": "Bell"
+  }
+]
