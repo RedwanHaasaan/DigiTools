@@ -39,7 +39,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
 
             {/* Explore Products */}
-            <a
+            <a href="#products"
               className="btn w-full sm:w-auto text-white text-sm md:text-base lg:text-lg font-semibold 
               py-3 md:py-4 lg:py-5 px-4 md:px-5 lg:px-6 
               rounded-full

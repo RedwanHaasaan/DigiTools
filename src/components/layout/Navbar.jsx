@@ -1,6 +1,6 @@
 import { ShoppingCart } from "lucide-react";
 
-const Navbar = ({ cartItem }) => {
+const Navbar = ({ cartItem, setActive }) => {
   const navItems = [
     { id: 1, name: "Products" },
     { id: 2, name: "Features" },
@@ -44,7 +44,7 @@ const Navbar = ({ cartItem }) => {
             >
               {navItems.map((item) => (
                 <li key={item.id}>
-                  <a href="#" className="font-medium btn w-full btn-ghost">
+                  <a href={`#${item.name.toLowerCase()}`} className="font-medium btn w-full btn-ghost">
                     {item.name}
                   </a>
                 </li>
@@ -91,7 +91,7 @@ const Navbar = ({ cartItem }) => {
           <ul className="flex flex-row gap-6 lg:gap-8 xl:gap-10 2xl:gap-12">
             {navItems.map((item) => (
               <li key={item.id}>
-                <a href="#" className={navClass}>
+                <a href={`#${item.name.toLowerCase()}`} className={navClass}>
                   {item.name}
                 </a>
               </li>
@@ -107,7 +107,9 @@ const Navbar = ({ cartItem }) => {
                 {cartItem}
               </span>
             )}
-            <ShoppingCart className="hover:text-primary" />
+            <a href="#products">
+              <ShoppingCart onClick={()=>setActive("cart")} className="w-5 h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 text-gray-700 hover:text-primary transition-colors duration-200" />
+            </a>
           </div>
           {/* Login */}
           <a

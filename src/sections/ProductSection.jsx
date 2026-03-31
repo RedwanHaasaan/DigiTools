@@ -2,8 +2,7 @@ import { useState } from "react";
 import ToggleButtons from "../components/ToggleButtons";
 import ProductShow from "../components/layout/ProductShow";
 import Cart from "../components/layout/Cart";
-const ProductSection = ({cart,setCart}) => {
-  const [active, setActive] = useState("products");
+const ProductSection = ({cart,setCart,active,setActive}) => {
   const [products, setProducts] = useState([]);
   const [loaded, setLoaded] = useState(false);
   const loadProducts = async () => {
@@ -20,7 +19,7 @@ const ProductSection = ({cart,setCart}) => {
     setCart((prev) => [...prev, product]);
     };
   return (
-    <div className="flex flex-col max-w-7xl mx-auto py-10 xl:py-32 px-4 gap-5 lg:gap-10">
+    <div id="products" className="flex flex-col max-w-7xl mx-auto py-10 xl:py-32 px-4 gap-5 lg:gap-10">
       <div className="flex flex-col gap-4 text-center">
         <h1 className="text-2xl xl:text-5xl font-extrabold">
           Premium Digital Tools
