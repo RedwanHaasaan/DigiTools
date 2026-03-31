@@ -6,6 +6,7 @@ import StatSection from "./sections/StatSection";
 import { useState } from "react";
 import GetStarted from "./sections/GetStarted";
 import Pricing from "./sections/Pricing";
+import CTA from "./sections/CTA";
 function App() {
    const [cart, setCart] = useState([]);
    const [active, setActive] = useState("products");
@@ -20,6 +21,7 @@ function App() {
         <ProductSection cart={cart} setCart={setCart} active={active} setActive={setActive} />
         <GetStarted/>
         <Pricing/>
+        <CTA/>
       </main>
       <ToastContainer
         position="top-right"

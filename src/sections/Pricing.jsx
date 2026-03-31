@@ -1,7 +1,7 @@
 import PricingCard from "../components/PricingCard";
 const Pricing = () => {
   return (
-    <div className="mx-auto bg-white text-center">
+    <div id="pricing" className="mx-auto bg-white text-center">
       <div className="py-16 px-4 flex flex-col gap-5 lg:gap-10">
         <div className="flex flex-col gap-4">
           <h1 className="text-2xl md:text-3xl lg:text-5xl font-extrabold text-gray-800">
