@@ -9,8 +9,8 @@ import Pricing from "./sections/Pricing";
 import CTA from "./sections/CTA";
 import Footer from "./components/layout/Footer";
 function App() {
-   const [cart, setCart] = useState([]);
-   const [active, setActive] = useState("products");
+  const [cart, setCart] = useState([]);
+  const [active, setActive] = useState("products");
   return (
     <>
       <header className="sticky z-50 top-0">
@@ -18,14 +18,19 @@ function App() {
       </header>
       <main>
         <Hero />
-        <StatSection/>
-        <ProductSection cart={cart} setCart={setCart} active={active} setActive={setActive} />
-        <GetStarted/>
-        <Pricing/>
-        <CTA/>
+        <StatSection />
+        <ProductSection
+          cart={cart}
+          setCart={setCart}
+          active={active}
+          setActive={setActive}
+        />
+        <GetStarted />
+        <Pricing />
+        <CTA />
       </main>
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
       <ToastContainer
         position="top-right"

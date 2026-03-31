@@ -60,7 +60,7 @@ const Navbar = ({ cartItem, setActive }) => {
                   <a
                     className="btn flex-1 text-center font-semibold py-2 rounded-full 
                     border border-[#4F39F6] text-[#4F39F6]
-                    hover:bg-linear-to-r hover:from-[#4F39F6] hover:to-[#9514FA] 
+                    hover:bg-gradient 
                     hover:text-white transition-all duration-300"
                   >
                     Login
@@ -69,7 +69,7 @@ const Navbar = ({ cartItem, setActive }) => {
                   {/* Get Started */}
                   <a
                     className="btn flex-1 text-center font-semibold py-2 rounded-full text-white
-                    bg-linear-to-r from-[#4F39F6] to-[#9514FA]
+                    bg-gradient
                     hover:bg-none hover:text-[#4F39F6] hover:border hover:border-[#4F39F6]
                     transition-all duration-300"
                   >

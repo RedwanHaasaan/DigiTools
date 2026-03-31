@@ -64,7 +64,7 @@ const Card = ({ product, AddToCart }) => {
             {product.description}
           </p>
 
-          {/* 🔥 Price */}
+          {/*Price */}
           <p className="text-xl font-bold">
             ${product.price}/
             <span className="text-base font-normal text-gray-500">
@@ -77,8 +77,8 @@ const Card = ({ product, AddToCart }) => {
           </p>
         </div>
         <ul className="mt-4 flex flex-col gap-2 text-xs xl:text-sm">
-          {product.features.map((feature, i) => (
-            <li key={i}>
+          {product.features.map((feature, index) => (
+            <li key={index}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="size-4 me-2 inline-block text-success"
