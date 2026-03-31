@@ -39,7 +39,7 @@ const PricingCard = ({
       <ul className="space-y-2 mb-8">
         {features.map((feature, index) => (
           <li key={index} className="flex items-center gap-2 text-sm">
-            <span className="text-green-500">✔</span>
+            <span className={highlighted ? "text-white" : "text-green-500"}>✔</span>
             {feature}
           </li>
         ))}
@@ -50,7 +50,7 @@ const PricingCard = ({
         className={`btn w-full rounded-full border-none
         ${
           highlighted
-            ? "bg-white text-purple-600 hover:bg-gray-100"
+            ? "bg-white text-primary hover:bg-gray-100"
             : "bg-gradient text-white"
         }`}
       >
