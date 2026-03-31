@@ -81,7 +81,7 @@ const Navbar = ({ cartItem, setActive }) => {
           </div>
 
           {/* Logo */}
-          <a className="text-2xl lg:text-3xl xl:text-4xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent font-extrabold">
+          <a href="/" className="text-2xl lg:text-3xl xl:text-4xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent font-extrabold cursor-pointer">
             DigiTools
           </a>
         </div>
