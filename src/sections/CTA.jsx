@@ -2,7 +2,7 @@ import React from "react";
 
 const CTA = () => {
   return (
-    <section className="bg-gradient py-16 px-4 text-center text-white rounded-2xl">
+    <section className="bg-gradient py-16 px-4 text-center text-white">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-2xl md:text-4xl font-bold mb-4">Ready to Transform Your Workflow?</h2>
         <p className="text-sm md:text-base text-white/80 mb-8 leading-relaxed">

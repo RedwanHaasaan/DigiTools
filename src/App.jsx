@@ -7,6 +7,7 @@ import { useState } from "react";
 import GetStarted from "./sections/GetStarted";
 import Pricing from "./sections/Pricing";
 import CTA from "./sections/CTA";
+import Footer from "./components/layout/Footer";
 function App() {
    const [cart, setCart] = useState([]);
    const [active, setActive] = useState("products");
@@ -23,6 +24,9 @@ function App() {
         <Pricing/>
         <CTA/>
       </main>
+      <footer>
+        <Footer/>
+      </footer>
       <ToastContainer
         position="top-right"
         autoClose={3000}
