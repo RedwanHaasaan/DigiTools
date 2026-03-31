@@ -1,6 +1,6 @@
 import { ShoppingCart } from "lucide-react";
 
-const Navbar = () => {
+const Navbar = ({ cartItem }) => {
   const navItems = [
     { id: 1, name: "Products" },
     { id: 2, name: "Features" },
@@ -14,10 +14,8 @@ const Navbar = () => {
 
   return (
     <div className="navbar bg-base-100 shadow-sm px-4 lg:px-8 xl:px-16 2xl:px-10 min-h-16 lg:min-h-18 xl:min-h-20 backdrop-blur-md">
-      
       {/* Container */}
       <div className="container mx-auto flex items-center justify-between">
-
         {/* LEFT */}
         <div className="navbar-start">
           {/* Mobile Menu */}
@@ -102,9 +100,15 @@ const Navbar = () => {
         </div>
 
         {/* RIGHT */}
-        <div className="navbar-end gap-3 lg:gap-4">
-          <ShoppingCart  className="lg:hidden xl:flex"/>
-
+        <div className="navbar-end gap-3 lg:gap-4 xl:gap-6 ">
+          <div className="indicator tab tab-active mr-2 lg:hidden xl:flex">
+            {cartItem !== 0 && (
+              <span className="indicator-item badge badge-primary rounded-full w-6 h-6 flex items-center justify-center text-center p-0">
+                {cartItem}
+              </span>
+            )}
+            <ShoppingCart className="hover:text-primary" />
+          </div>
           {/* Login */}
           <a
             className="btn text-sm lg:text-base xl:text-lg font-semibold 

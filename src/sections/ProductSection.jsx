@@ -2,10 +2,9 @@ import { useState } from "react";
 import ToggleButtons from "../components/ToggleButtons";
 import ProductShow from "../components/layout/ProductShow";
 import Cart from "../components/layout/Cart";
-const ProductSection = () => {
+const ProductSection = ({cart,setCart}) => {
   const [active, setActive] = useState("products");
   const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState([]);
   const [loaded, setLoaded] = useState(false);
   const loadProducts = async () => {
     const res = await fetch("/product.json");
