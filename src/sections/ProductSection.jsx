@@ -2,7 +2,6 @@ import { useState } from "react";
 import ToggleButtons from "../components/ToggleButtons";
 import ProductShow from "../components/layout/ProductShow";
 import Cart from "../components/layout/Cart";
-import NoCartItem from "../components/NoCartItem";
 const ProductSection = () => {
   const [active, setActive] = useState("products");
   const [products, setProducts] = useState([]);
@@ -40,7 +39,7 @@ const ProductSection = () => {
       {active === "products" ? (
         <ProductShow products={products} AddToCart={AddToCart} />
       ) : (
-        <Cart cart={cart} />
+        <Cart cart={cart} setActive={setActive}/>
       )}
     </div>
   );
