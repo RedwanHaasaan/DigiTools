@@ -16,7 +16,7 @@ const StepCard = ({step,title,description,image}) => {
       <h2 className="text-xl font-semibold mb-2">{title}</h2>
 
       {/* Description */}
-      <p className="text-gray-500 text-sm leading-relaxed">
+      <p className="text-gray-500 text-sm leading-relaxed xl:max-w-xs mx-auto">
         {description}
       </p>
     </div>
